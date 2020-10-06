@@ -2,21 +2,59 @@
 
 .header-principal{
 
-  .wrapper{
+
+
+  .flex{
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+
+
+
+
+  .logo img{
+    width: 50px;
+    margin-right: 20px;
+  }
+
+
+
+
+
+  h2{
+    display: flex;
+    align-items: center;
+
+  }
+
+
+
+  .nav-principal{
+    width: 100%;
 
 
   ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    padding: 0;
+    list-style: none;
   }
 
+}
 
 
-  li{
-    list-style: none;
+
+
+
+  @media screen and (min-width:$vw-medium)  {
+    .header-principal{
+      .flex{
+        flex-direction: row;
+      }
+    }
   }
 
 }
